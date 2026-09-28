@@ -12,7 +12,7 @@ import { Menu, X, Linkedin, Facebook, Twitter, MapPin, Mail } from "lucide-react
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import logo from "../assets/logo.png.asset.json";
+import logoMark from "../assets/logo-mark.png.asset.json";
 import { CONTACT } from "../lib/contact";
 
 const navLinks = [
@@ -31,7 +31,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logo.url} alt="CloudShield Africa logo" width={40} height={40} className="h-10 w-10" />
+          <img src={logoMark.url} alt="CloudShield Africa logo" width={40} height={40} className="h-10 w-10" />
           <span className="font-display text-lg font-bold tracking-tight text-foreground">
             Cloud<span className="text-secondary">Shield</span>{" "}
             <span className="text-primary">Africa</span>
@@ -104,7 +104,7 @@ function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <img src={logo.url} alt="CloudShield Africa logo" width={44} height={44} className="h-11 w-11 rounded-lg bg-white p-1" loading="lazy" />
+              <img src={logoMark.url} alt="CloudShield Africa logo" width={44} height={44} className="h-11 w-11 rounded-lg bg-white p-1" loading="lazy" />
               <span className="font-display text-lg font-bold">
                 CloudShield <span className="text-gradient-brand">Africa</span>
               </span>
